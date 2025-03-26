@@ -332,6 +332,29 @@ profile-photo .img {
 
 /* Tablet */
 @media (max-width: 768px) {
+   .header ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #202020;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .header ul.active {
+    display: flex;
+  }
+
+  .header .menu_icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
   .education-content {
     margin-bottom: 100px; /* Kurangi lagi jarak bawah */
   }
